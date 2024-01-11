@@ -1,0 +1,84 @@
+/* body{
+    background-color: red;
+} */      /*note: ctrl+ shift + R === in the output page leads the hardcore reset to make our flow easy!!*/
+
+html{
+    scroll-behavior: smooth ;
+}
+/* Navigation */
+
+#navbar{
+    flex-direction: column;
+     margin: 25px; 
+}
+#navbar ul li a{
+    /* font-size: 1rem; px me lika kyuki rem me ek line me nehi aaraha tha galaxy fold wale mobile me!!*/
+    font-size: 10px;
+    padding: 0px 4px;
+}
+#navbar ul{
+    padding-bottom: 8px;
+}
+/* Home section */
+#home{
+    height: 178px; /*flex direction already column hai!!*/
+    padding: 3px 17px;
+}
+#home::before{
+    /* height: 150%; */
+    height: 133%;
+}
+#home p{
+    font-size: 11px;
+}
+/* Services */
+#services{
+ 
+flex-direction: column;
+margin: 0px;
+}
+#services .box{
+    padding: 10px;
+    margin: 17px 1px;
+}
+#services .box img{
+    height: 138px;
+}
+#services .box .h-secondary{
+
+font-size: 18px;
+
+}
+
+/* client section */
+#clients{
+    /* overflow: hidden;  */
+    flex-wrap: wrap;/* coz our client section is a flex box*/
+}
+#clients img{
+    width: 86px;
+    height: auto; /*coz maine iski width change kari hai[86px] so height ko auto kiya for safer side!! specially agar aap images ki width change karte ho na to uske height ko auto kar dia to achha rahega!!*/
+
+    /* padding: 2px 7px; nahi doge tobhi chalegaa!! */
+}
+
+#client-section{
+    margin-top: 13px;
+    margin-bottom: 0px;
+}
+ /* contact us section */
+   #contact-box form{
+    width: 80%;
+   }
+
+ /* footer */
+
+ /*utility classes*/
+ .h-primary{
+    font-size: 18px;
+ }
+ .btn{
+    font-size: 15px;
+    padding: 7px 12px;
+    margin-bottom: 35px;
+ }

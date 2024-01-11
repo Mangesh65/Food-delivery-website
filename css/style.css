@@ -1,0 +1,247 @@
+#logo img{
+    height: 68px;
+    width: 73px;
+    border-radius: 50%;
+}
+
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+ /* CSS variables */
+ :root{
+    --navbar-height:59px;
+ }
+
+ /* Navigation bar */
+ #navbar{
+    display: flex;
+    align-items: center;
+    /* position: relative; /*here u can do position sticky also!!*/
+    /* height: var(--navbar-height); just showing here that how to use variable everywhere globally !! */   
+    position: sticky;
+    top: 0px;
+   
+ }
+ #navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.7;
+ }
+ /* Navigation bar:logo and image */
+    #logo{
+        margin: 4px 19px;
+    }
+    #logo img{
+        margin: 3px 6px;
+        height: 62px;
+    }
+
+ /*:Navigation bar list styling */
+ #navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+ }
+
+
+ #navbar ul li{
+  /* color: white; */
+  list-style: none;
+  font-size: 1.3rem;
+
+ }
+ #navbar ul li a{
+       color: white;
+       display: block;
+       padding: 3px 22px;
+       border-radius: 20px;
+       text-decoration: none;
+
+ }
+ #navbar ul li a:hover{
+       color: black;
+       background-color: white;
+
+ }
+
+ /* Home Section */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 661px;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; mat karna just checking and we know the reason that relative karne se whai specific parts pe hi css apply hoga jo bhi before me likha hoga wo!! tab wo before wale part ko chhuye ga tak nahi!*/
+    
+ }
+ #home::before{
+    content: "";
+   background: url(../bg1.jpg) no-repeat center center/cover;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 133%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.89;
+ }
+ #home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+ }
+ #home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+ }
+ /* SERVICES SECTION */
+
+ #services{
+    margin:34px ;
+    display: flex;
+ }
+ #services .box{
+    border: 2px solid brown;
+    padding: 3;
+    padding: 34px;
+    margin: 11px 40px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+    margin-bottom: 12px;
+}
+ 
+ #services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+ }
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+#services-container{
+   background-color: rgb(240, 226, 208);
+}
+
+/* client-section */
+
+    #client-section{
+        /*height: 344px;taaki phone.css me client section me wrap ka properrty set hole achhe se and khudka height apne se ye set hojayega adjust hokke!*/ /*client ka align item set hoga ab proper!!*/
+         position: relative;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+    }
+     #clients img{
+        height: 124px;
+      
+    }     /*agar ye nahi doge to client k imges bahar nikalke aayege client section se responsive dekhte wqtt , phone.css me saaaare logo achhese dikh sake*/
+    .client-item #mangesh{
+      border-radius: 50%;
+       width: 124px;
+       height: 124px;
+  }
+  .client-item{
+   padding: 34px;
+  }
+  #client-section::before{
+   content: "";
+   position: absolute;
+   background: url(../bg.jpg);
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.3;
+
+  }
+  /* contact section */
+#contact{
+   position: relative;
+}
+#contact::before{
+   content: "";
+   position: absolute;
+   background: url(../contact.jpg) no-repeat center center/cover;
+   z-index: -1;
+   opacity: 0.7;
+   width: 100%;
+   height: 100%;
+
+}
+#contact-box{ /*bahot sahi logic hai!!!*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 34px;
+}
+#contact-box form{
+   width: 56%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+}
+
+#contact-box input,
+#contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.1rem;
+}
+
+footer{
+   background-color: black;
+   color: white;
+   padding: 5px 20px;
+}
+ /* Utility class */
+ .h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+ }
+ .h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+ }
+ .btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .center{
+    text-align: center;
+ }
